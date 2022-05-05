@@ -1,6 +1,6 @@
 # docker image
 DOCKER_REGISTRY ?= docker.io
-DOCKER_IMAGE ?= aeternity/aepp-faucet
+DOCKER_IMAGE ?= aeternity/aepp-faucet-hc
 K8S_DEPLOYMENT ?= aepp-faucet
 K8S_NAMESPACE ?= testnet
 DOCKER_TAG ?= $(shell git describe --always)
