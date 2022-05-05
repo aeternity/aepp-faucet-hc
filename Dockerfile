@@ -10,8 +10,11 @@ RUN npm install && npm run prod
 FROM python:3-slim-stretch
 
 RUN apt-get update && apt-get install -y \
+gcc \
 netbase \
 build-essential
+
+RUN pip install --upgrade pip
 
 # copy generated assets
 COPY --from=frontend /app/assets /app/assets

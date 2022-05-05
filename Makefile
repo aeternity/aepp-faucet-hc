@@ -29,7 +29,7 @@ build:
 	@echo build locally
 	npm install
 	npm run prod
-	python -m pip install -r requirements.txt
+	python3 -m pip install -r requirements.txt
 	@echo build comleted
 
 docker-build:
