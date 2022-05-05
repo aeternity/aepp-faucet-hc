@@ -43,9 +43,9 @@ app = Flask(__name__, static_url_path='')
 
 # environment var
 FAUCET_ACCOUNT_PRIV_KEY = os.environ.get("FAUCET_ACCOUNT_PRIV_KEY")
-TOPUP_AMOUNT = amount_to_aettos(os.environ.get("TOPUP_AMOUNT", "5AE"))
+TOPUP_AMOUNT = amount_to_aettos(os.environ.get("TOPUP_AMOUNT", "30AE"))
 SPEND_TX_PAYLOAD = os.environ.get("SPEND_TX_PAYLOAD", "Faucet Tx")
-NODE_URL = os.environ.get("NODE_URL", "https://testnet.aeternity.io")
+NODE_URL = os.environ.get("NODE_URL", "http://13.239.157.207:3013")
 EXPLORER_URL = os.environ.get("EXPLORER_URL", "https://testnet.aeternal.io")
 SUPPORT_EMAIL = os.environ.get("SUPPORT_EMAIL", "aepp-dev@aeternity.com")
 # telegram notifications
@@ -53,7 +53,7 @@ TELEGRAM_API_TOKEN = os.environ.get('TELEGRAM_API_TOKEN', False)
 TELEGRAM_CHAT_ID = os.environ.get('TELEGRAM_CHAT_ID')
 # graylisting
 CACHE_MAX_SIZE = int(os.environ.get('CACHE_MAX_SIZE', 6000))
-CACHE_MAX_AGE = int(os.environ.get('CACHE_MAX_AGE', 3600 * 4))  # default 4h
+CACHE_MAX_AGE = int(os.environ.get('CACHE_MAX_AGE', 3600 * 24))  # default 24h
 # Server
 SERVER_LISTEN_ADDRESS = os.environ.get("SERVER_LISTEN_ADDRESS", "0.0.0.0")
 SERVER_LISTEN_PORT = int(os.environ.get("SERVER_LISTEN_PORT", 5000))
