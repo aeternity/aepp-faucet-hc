@@ -61,5 +61,4 @@ docker-run:
 	@docker run -p 5000:5000 $(DOCKER_IMAGE)
 
 debug-start:
-	. .envrc
 	python3 faucet.py start
