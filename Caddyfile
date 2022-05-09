@@ -1,2 +1,3 @@
+debug
 {$SITE_ADDRESS}
 reverse_proxy {$APP_ADDRESS}
