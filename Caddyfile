@@ -4,5 +4,6 @@
 
 }
 
-{$SITE_ADDRESS}
-reverse_proxy {$APP_ADDRESS}
+
+18.195.215.16
+reverse_proxy app:5000
