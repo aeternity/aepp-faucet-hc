@@ -45,7 +45,7 @@ app = Flask(__name__, static_url_path='')
 FAUCET_ACCOUNT_PRIV_KEY = os.environ.get("FAUCET_ACCOUNT_PRIV_KEY")
 TOPUP_AMOUNT = amount_to_aettos(os.environ.get("TOPUP_AMOUNT", "30AE"))
 SPEND_TX_PAYLOAD = os.environ.get("SPEND_TX_PAYLOAD", "Faucet Tx")
-NODE_URL = os.environ.get("NODE_URL", "http://13.239.157.207:3013")
+NODE_URL = os.environ.get("NODE_URL", "https://testnet-hc.aeternity.io")
 EXPLORER_URL = os.environ.get("EXPLORER_URL", "https://testnet.aeternal.io")
 SUPPORT_EMAIL = os.environ.get("SUPPORT_EMAIL", "aepp-dev@aeternity.com")
 # telegram notifications
