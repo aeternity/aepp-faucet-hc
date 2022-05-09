@@ -14,10 +14,10 @@ services:
       - "caddy-data:/data/caddy"
       - "caddy-config:/config/caddy"
     ports:
-      - ${HTTP_PORT:-80}:80
+      - ${HTTP_PORT:-8080}:80
       - ${HTTPS_PORT:-8081}:443
-    env_file:
-      - .env-dev
+#    env_file:
+#      - .env-dev
     depends_on:
       - app
 volumes:
