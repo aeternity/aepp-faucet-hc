@@ -18,7 +18,7 @@ services:
       - ${HTTPS_PORT:-8081}:443
     environment:
         SITE_ADDRESS: ${SITE_ADDRESS:-localhost:80}
-        APP_ADDRESS: ${APP_ADDRESS:-app:5000}
+        APP_ADDRESS: app:5000
     depends_on:
       - app
 volumes:
